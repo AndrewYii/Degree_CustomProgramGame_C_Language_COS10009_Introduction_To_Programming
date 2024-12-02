@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "raylib.h": "c",
+        "json-c.h": "c",
+        "json.h": "c",
+        "math.h": "c"
+    },
+    "git.ignoreLimitWarning": true
+}

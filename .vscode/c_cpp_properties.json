@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win64",
+            "includePath": [
+                "${default}",
+                // Change this to your msys64 installation folder
+                "C:\\msys64\\mingw64\\include**", //comma
+                "C:\\msys64\\mingw64\\include\\**" //add double slash
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            // Change this to your msys64 installation folder
+            "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

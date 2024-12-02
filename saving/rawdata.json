@@ -1,0 +1,86 @@
+{
+  "X position of Player": 300.00,
+  "Y position of Player": 400.00,
+  "Number of harvested wheat": 0.00,
+  "X position of number of harvested wheat": 810.00,
+  "Y position of number of harvested wheat": -150.00,
+  "X position of harvested wheat": 760.00,
+  "Y position of harvested wheat": -125.00,
+  "X position of setting button": -490.00,
+  "Y position of setting button": -130.00,
+  "X position of menu tools": 200.00,
+  "Y position of menu tools": 733.00,
+  "X position of menu icon1": -43.00,
+  "Y position of menu icon1": 710.00,
+  "X position of menu icon2": 54.00,
+  "Y position of menu icon2": 710.00,
+  "X position of menu icon3": 151.00,
+  "Y position of menu icon3": 710.00,
+  "X position of menu icon4": 252.00,
+  "Y position of menu icon4": 710.00,
+  "X position of menu icon5": 342.00,
+  "Y position of menu icon5": 710.00,
+  "X position of menu icon6": 439.00,
+  "Y position of menu icon6": 710.00,
+  "X position of chat icon": -40.00,
+  "Y position of chat icon": 713.00,
+  "X position of wheat icon": 152.00,
+  "Y position of wheat icon": 711.00,
+  "X position of menu tools hover": -43.00,
+  "Y position of menu tools hover": 718.00,
+  "X position of menu farm signal": 650.00,
+  "Y position of menu farm signal": -70.00,
+  "X position of menu display money": 840.00,
+  "Y position of menu display money": 30.00,
+  "Money": 0,
+  "X position of money coin": 810,
+  "Y position of money coin": -35,
+  "X position of dialog box": 200.00,
+  "Y position of dialog box": 820.00,
+  "X position of dialog emote": -385.00,
+  "Y position of dialog emote": 720.00,
+  "Win": 0,
+  "Dig Array": [
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0]
+  ],
+  "Seed Array": [
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0]
+  ],
+  "Water Array": [
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0]
+  ],
+  "Harvest Array": [
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0]
+  ],
+  "Growth Rate Array": [
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+  ],
+  "Water Rate Array": [
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+    [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+  ]
+}
+

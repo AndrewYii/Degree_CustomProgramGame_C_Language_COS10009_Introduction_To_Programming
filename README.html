@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See some requirement before running my program" />
+    <meta name="keywords" content="My Custom Program README file" />
+    <meta name="author" content="Andrew Yii Teck Foon" />
+    <title>Andrew's Custom Program - README</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light and Dark Mode */
+        body.light-mode {
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        header .toggle-theme {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        main.light-mode {
+            background-color: white;
+            color: #333;
+        }
+
+        main.dark-mode {
+            background-color: #2a2a2a;
+            color: #e0e0e0;
+        }
+
+        h2 {
+            color: #2193b0;
+            border-bottom: 3px solid #6dd5ed;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            border-left: 5px solid #2193b0;
+            padding: 15px;
+            overflow: auto;
+            white-space: pre-wrap;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Dark Mode Adjustments */
+        main.dark-mode pre {
+            background-color: #e0e0e0; /* Light background in dark mode for contrast */
+            color: #1a1a1a; /* Dark text color to ensure visibility */
+        }
+
+        code {
+            background-color: #eee;
+            padding: 3px 5px;
+            border-radius: 5px;
+            color: #1a1a1a; /* Dark text for code */
+        }
+
+        main.dark-mode code {
+            background-color: #e0e0e0; /* Light background for inline code in dark mode */
+            color: #1a1a1a; /* Dark text color for better contrast */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #2193b0;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #176a80;
+        }
+
+        #demoLinks {
+            margin-top: 20px;
+            display: none;
+        }
+
+        a {
+            color: #2193b0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2193b0;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .typing-effect {
+            font-size: 1.8rem;
+            color: #2193b0;
+            border-right: 2px solid #2193b0;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            width: 0;
+            margin: 0 auto;
+            animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 45%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2193b0;
+            color: white;
+            border: none;
+            border-radius: 10%;
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none; /* Initially hidden */
+            transition: background-color 0.3s;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #176a80;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+<header>
+    <h1 class="typing-effect">Welcome to my Custom Program - README</h1>
+    <button class="toggle-theme" onclick="toggleTheme()">☀️</button>
+</header>
+
+<main>
+    <h2>Custom Program</h2>
+    <p>This is a custom platform game created with C, using the Raylib and JSON-C libraries.</p>
+
+    <h2>Prerequisites</h2>
+    <p>Before running the program, make sure you have the following installed:</p>
+    <ul>
+        <li>GCC (GNU Compiler Collection)</li>
+        <li>Raylib library</li>
+        <li>JSON-C library</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <h3>MingW64 (64-bit) (Recommended)</h3>
+    <h4>Raylib library</h4>
+    <pre><code>pacman -S mingw-w64-x86_64-raylib</code></pre>
+    <h4>JSON-C library</h4>
+    <pre><code>pacman -S mingw-w64-x86_64-json-c</code></pre>
+
+    <h3>MingW32 (32-bit)</h3>
+    <h4>Raylib library</h4>
+    <pre><code>pacman -S mingw-w64-i686-raylib</code></pre>
+    <h4>JSON-C library</h4>
+    <pre><code>pacman -S mingw-w64-i686-json-c</code></pre>
+
+    <h2>Usage</h2>
+    <p>Ensure that you have added the appropriate path for the selected bin directory (MingW64 or MingW32) in your environment variables.</p>
+    <p>Restart your system to apply changes to the environment variables.</p>
+
+    <h3>Recommended Way (Command)</h3>
+    <h4># Compile the program (General: both MingW64 & MingW32)</h4>
+    <pre><code>gcc main.c -o game.exe -I -L -lraylib -ljson-c -lopengl32 -lgdi32 -lwinmm </code></pre>
+
+    <h3># Run the Program</h3>
+    <pre><code>./game.exe</code></pre>
+
+    <h3>Alternate Way (F5 to run & debug)</h3>
+    <ul>
+        <li>You can also use <strong>F5</strong> to debug through Visual Studio Code.</li>
+        <li>If you have MingW32 setup in your environment variables, adjust the properties in the <code>.vscode</code> folder (<code>tasks.json</code>, <code>launch.json</code>, <code>c_cpp_properties.json</code>) to match your setup.</li>
+        <li>Keep the project folder shallow (avoid deeply nested directories) to ensure smooth debugging with <strong>F5</strong>.</li>
+        <li>It is recommended to place the project folder on the <strong>Desktop</strong> for easy access and fewer path-related issues.</li>
+    </ul>
+
+    <h3>Make File</h3>
+    <ul>
+        <li>You need to download the <strong>make extension</strong> for your compiler.</li>
+        <h4>Msys</h4>
+        <pre><code>pacman -S make</code></pre>
+        <li>Need to set the pathway for the make.exe in your environmental variable.</li>
+        <h4># Compile the program </h4>
+        <pre><code>make</code></pre>
+        <h4># Run the Program</h4>
+        <pre><code>./game.exe</code></pre>
+        <h4># Clear the Program</h4>
+        <pre><code>make clean</code></pre>
+        
+    </ul>
+
+    <h2>Demo Video Link</h2>
+    <div class="button-container">
+        <button onclick="showDemo()" id="toggleButton">Show Demo Links</button>
+    </div>
+    <div id="demoLinks">
+        <h3>Installation Link</h3>
+        <p><a href="https://youtu.be/wWIj9HaRGWY">Installation Link Here</a></p>
+
+        <h3>Game (Custom Program) Trailer Link</h3>
+        <p><a href="https://youtu.be/jmQMNYP65ZQ">Trailer Link Here</a></p>
+    </div>
+
+    <h2>Facing Problems</h2>
+    <p>If you are unable to run the program using MingW32, try using the MingW64 setup. This program was developed using the MingW64 environment, and the setup instructions are much clearer when following the MingW64 pathway.</p>
+    <p>That's all! Have fun, and enjoy your journey with my game (custom program). If you encounter any issues or need further information, feel free to <a href="mailto:104386568@students.swinburne.edu.my">contact me</a>.</p>
+</main>
+
+<footer class="footer">
+    <p>© 2024 Custom Program | Developed by Andrew</p>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        const main = document.querySelector('main');
+        const themeButton = document.querySelector('.toggle-theme');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        main.classList.toggle('dark-mode');
+        main.classList.toggle('light-mode');
+
+        themeButton.textContent = body.classList.contains('dark-mode') ? '🌙' : '☀️';
+    }
+
+    function showDemo() {
+        const demoSection = document.getElementById('demoLinks');
+        const button = document.getElementById('toggleButton'); // Get the button
+        const currentDisplay = window.getComputedStyle(demoSection).display;
+
+        // Toggle the display property
+        if (currentDisplay === 'none') {
+            demoSection.style.display = 'block'; // Show the section
+            button.textContent = 'Hide Demo Links'; // Change button text
+        } else {
+            demoSection.style.display = 'none'; // Hide the section
+            button.textContent = 'Show Demo Links'; // Change button text
+        }
+    }
+
+    // Scroll to Top Functionality
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = 'block'; // Show the button
+        } else {
+            scrollToTopBtn.style.display = 'none'; // Hide the button
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to top
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Set typing effect after page loads
+        const typingElement = document.querySelector('.typing-effect');
+        typingElement.style.width = `${typingElement.textContent.length}ch`;
+    });
+</script>
+
+</body>
+</html>
+

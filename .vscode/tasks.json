@@ -1,0 +1,33 @@
+{
+    "tasks": [
+		{
+			"type": "shell",
+			"label": "main",
+			"command": "gcc",
+			// Remove all "/include" in case can run properly using F5
+			"args": [
+				"-g",
+				"main.c",
+				"-o", "game.exe",
+				"-I",
+				"-L",
+				"-lraylib",
+				"-ljson-c",
+				"-lopengl32",
+				"-lgdi32",
+				"-lwinmm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+    ],
+    "version": "2.0.0"
+}
